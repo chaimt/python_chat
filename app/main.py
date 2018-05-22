@@ -1,6 +1,6 @@
 import logging
 from flask import Flask
-from rest.restController import message_requests
+from app.rest.restController import message_requests
 
 app = Flask(__name__)
 app.register_blueprint(message_requests)

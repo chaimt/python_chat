@@ -1,5 +1,5 @@
 from flask import Blueprint
-from domain import messageApp
+from app.domain import messageApp
 from flask import request
 
 message_requests = Blueprint('message_requests', __name__)

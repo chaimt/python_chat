@@ -1,3 +1,3 @@
-from data_structures import MessageApp
+from .data_structures import MessageApp
 
 messageApp = MessageApp()
