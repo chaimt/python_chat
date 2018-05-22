@@ -1,13 +1,5 @@
 # chat application python
-Google Dataflow process for migration process of data from the following sources:
 
-
-*Build base image (this should already be done)
-cd baseImage
-docker build -t python-appengine-sumo-base -f ./Dockerfile . --no-cache
-docker tag [containerId] gcr.io/ordinal-ember-163410/python-appengine-sumo-base
-gcloud docker -- push gcr.io/ordinal-ember-163410/python-appengine-sumo-base
-cd ../
 
 *Build docker locally
 docker build -t local/python -f ./Dockerfile .

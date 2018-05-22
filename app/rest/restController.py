@@ -7,7 +7,7 @@ message_requests = Blueprint('message_requests', __name__)
 
 @message_requests.route('/chat', methods=['POST'])
 def chat_send():
-    return messageApp.add_message(request.data).to_json()
+    return messageApp.add_message(request.data.decode('ascii')).to_json()
 
 
 @message_requests.route('/chat/<message_id>', methods=['GET'])

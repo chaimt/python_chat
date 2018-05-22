@@ -3,3 +3,4 @@ Werkzeug==0.14.1
 gunicorn==19.8.1
 pytest==3.5.1
 grpcio==1.12.0
+grpcio-tools==1.12.0
